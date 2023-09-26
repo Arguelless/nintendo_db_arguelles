@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'layout_mobile_screen_0.dart';
 
 // Crear el widget principal 'App' de tipus 'stateful'
 class App extends StatefulWidget {
@@ -10,6 +11,7 @@ AppState createState() => AppState();
 
 // Definir l'estat del widget 'App'
 class AppState extends State<App> {
+
 // Definir el contingut del widget 'App'
 @override
 Widget build(BuildContext context) {
@@ -22,9 +24,13 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
 useMaterial3: true,
 ),
 // De moment només es veu un text 'Hola App'
-home: const Text('Hola App'),
+home: _setLayout(context),
 );
 }
+
+// Definir la funció que escull el 'layout' a mostrar
+Widget _setLayout(BuildContext context) {
+// Aquí, més endavant escollirem mòbil o desktop
+return const LayoutMobileScreen0();
+
 }
-
-
