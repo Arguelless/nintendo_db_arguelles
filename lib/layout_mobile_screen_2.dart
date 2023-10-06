@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nintendo_db/layout_personatge.dart';
 import 'package:provider/provider.dart';
 import 'app_data.dart';
 
