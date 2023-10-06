@@ -23,7 +23,12 @@ void main() async {
   }
 
 // Definir 'App' com el widget principal
-  runApp(const App());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => AppData(),
+      child: const App(),
+    ),
+  );
 }
 
 // Al mostrar la finestra d'aplicació,
